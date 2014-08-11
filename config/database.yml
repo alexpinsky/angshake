@@ -3,8 +3,9 @@ development:
   encoding: unicode
   database: angshake_dev
   pool: 100
-  username: 
-  password:
+  username: bmw
+  password: qwe123
+  host: localhost
 
 test:
   adapter: postgresql
@@ -12,5 +13,6 @@ test:
   database: angshake_test
   pool: 10
   timeout: 5000
-  username: 
-  password:
+  username: bmw
+  password: qwe123
+  host: localhost

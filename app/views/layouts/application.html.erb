@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="sportsStore">
 <head>
-  <title></title>
+  <title>SportsStore</title>
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= yield :javascript %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-controller="sportsStoreCtrl">
 
-  <%= yield %>
+<%= yield %>
 
 </body>
 </html>

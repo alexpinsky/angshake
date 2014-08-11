@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-  def index
+  def todo
     render layout: false
   end
 
@@ -12,5 +12,9 @@ class PagesController < ApplicationController
       { action: "Call Joe", done: false }
     ]
     render json: items
+  end
+  
+  def sports_store
+    
   end
 end
