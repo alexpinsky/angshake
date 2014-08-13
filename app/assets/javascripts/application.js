@@ -10,5 +10,8 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require_tree .
-//= require_tree ./angular
+//= require ./angular/angular
+//= require ./angular/sportsStoreModule
+//= require_tree ./angular/controllers
+//= require_tree ./angular/filters
+//= require_tree ./angular/ngmodules

@@ -1,6 +1,3 @@
-angular.module("sportsStore", ["customFilters"
-]);
-
 angular.module("sportsStore").controller("sportsStoreCtrl", function ($scope) {
 
   $scope.data = {
