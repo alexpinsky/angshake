@@ -5,4 +5,9 @@ Angshake::Application.routes.draw do
     get '' => 'pages#todo'
     get 'items' => 'pages#items'
   end
+
+  resources :categories do
+    resources :products
+  end
+  resources :products
 end

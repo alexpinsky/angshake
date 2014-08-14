@@ -8,8 +8,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body ng-controller="sportsStoreCtrl">
-
-<%= yield %>
+  <div class="navbar navbar-inverse">
+    <a class="navbar-brand" href="#">SPORTS STORE</a>
+    <cart-summary />
+  </div>
+  <div class="alert alert-danger" ng-show="data.error">
+    Error ({{data.error.status}}). The product data was not loaded.
+    <a href="<%= root_path %>" class="alert-link">Click here to try again</a>
+  </div>
+  <%= yield %>
 
 </body>
 </html>

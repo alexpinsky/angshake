@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20140811150421) do
   create_table "products", force: true do |t|
     t.string   "name"
     t.string   "description"
-    t.integer  "product_id"
+    t.integer  "category_id"
     t.float    "price"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -15,3 +15,4 @@
 //= require_tree ./angular/controllers
 //= require_tree ./angular/filters
 //= require_tree ./angular/ngmodules
+//= require_tree ./angular/components
