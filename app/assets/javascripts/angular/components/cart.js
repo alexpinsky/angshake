@@ -34,11 +34,11 @@ angular.module("cart", [])
       return cartData;
     }
   }
-});
+})
 .directive("cartSummary", function (cart) {
   return {
     restrict: "E",
-    templateUrl: "",
+    templateUrl: "assets/cart/cartSummary.html",
     controller: function ($scope) {
 
       var cartData = cart.getProducts();

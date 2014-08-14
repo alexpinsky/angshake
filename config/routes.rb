@@ -10,4 +10,5 @@ Angshake::Application.routes.draw do
     resources :products
   end
   resources :products
+  resources :orders
 end
