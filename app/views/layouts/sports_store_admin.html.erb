@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="sportsStoreAdmin">
+<head>
+  <title>Administration</title>
+  <%= stylesheet_link_tag    "sports_store_admin", media: "all" %>
+  <%= javascript_include_tag "sports_store_admin" %>
+  <%= yield :javascript %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <ng-view />
+  
+  <%= yield %>
+
+</body>
+</html>

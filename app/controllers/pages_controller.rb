@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
+  layout :set_layout
 
   def todo
-    render layout: false
   end
 
   def items
@@ -15,6 +15,14 @@ class PagesController < ApplicationController
   end
   
   def sports_store
-    
   end
+
+  def sports_store_admin
+  end
+
+  private 
+
+    def set_layout
+      action_name
+    end
 end

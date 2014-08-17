@@ -1,8 +1,8 @@
 angular.module("sportsStore")
-.constant("categoriesUrl", "http://localhost:3000/categories")
-.constant("productsUrl", "http://localhost:3000/products")
-.constant("ordersUrl", "http://localhost:3000/orders")
-.controller("sportsStoreCtrl", function ($scope, $http, categoriesUrl, productsUrl, ordersUrl, cart) {
+.constant("categoriesUrl", "http://localhost:3000/sports_store/categories")
+.constant("productsUrl", "http://localhost:3000/sports_store/products")
+.constant("ordersUrl", "http://localhost:3000/sports_store/orders")
+.controller("sportsStoreCtrl", function ($scope, $http, $location, categoriesUrl, productsUrl, ordersUrl, cart) {
 
   $scope.data = {};
 

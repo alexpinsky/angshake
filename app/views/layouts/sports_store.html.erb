@@ -2,8 +2,8 @@
 <html ng-app="sportsStore">
 <head>
   <title>SportsStore</title>
-  <%= stylesheet_link_tag    "application", media: "all" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "sports_store", media: "all" %>
+  <%= javascript_include_tag "sports_store" %>
   <%= yield :javascript %>
   <%= csrf_meta_tags %>
 </head>
@@ -17,6 +17,7 @@
     <a href="<%= root_path %>" class="alert-link">Click here to try again</a>
   </div>
   <ng-view />
+  
   <%= yield %>
 
 </body>

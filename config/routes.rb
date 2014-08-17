@@ -6,9 +6,24 @@ Angshake::Application.routes.draw do
     get 'items' => 'pages#items'
   end
 
-  resources :categories do
+  scope '/sports_store' do
+    get '' => 'pages#sports_store'
+    resources :categories do
+      resources :products
+    end
     resources :products
+    resources :orders
   end
-  resources :products
-  resources :orders
+
+  scope '/sports_store_admin' do
+    get '' => 'pages#sports_store_admin'
+    resources :products
+    resources :orders
+  end
+
+  resources :users do
+    collection do
+      post 'login'
+    end
+  end
 end
