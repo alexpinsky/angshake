@@ -31,4 +31,5 @@ gem 'unicorn'
 gem 'pg'
 gem 'foreman'
 gem 'hirb'
+gem 'ng-rails-csrf'
 

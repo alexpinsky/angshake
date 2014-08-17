@@ -1,4 +1,4 @@
-angular.module("sportsStore", ["customFilters", "cart", "ngRoute"])
+angular.module("sportsStore", ["customFilters", "cart", "ngRoute", "ng-rails-csrf"])
 .config(function ($routeProvider) {
   $routeProvider.when("/complete", {
     templateUrl: "assets/thankYou.html"
