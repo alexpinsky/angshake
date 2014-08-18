@@ -16,7 +16,7 @@ class OrdersController < ApplicationController
       render json: { status: 400 }, status: 400
     end
   rescue Exception => e
-    render json: { message: '', status: 500 }, status: 500
+    render json: { status: 500 }, status: 500
   end
 
   private
