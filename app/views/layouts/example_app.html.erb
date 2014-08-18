@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+<head>
+  <title>Administration</title>
+  <%= stylesheet_link_tag    "example_app", media: "all" %>
+  <%= javascript_include_tag "example_app" %>
+  <%= yield :javascript %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <ng-view />
+  
+  <%= yield %>
+
+</body>
+</html>

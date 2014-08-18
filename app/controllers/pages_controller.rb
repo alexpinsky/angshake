@@ -20,6 +20,9 @@ class PagesController < ApplicationController
   def sports_store_admin
   end
 
+  def example_app
+  end
+
   private 
 
     def set_layout

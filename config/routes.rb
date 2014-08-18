@@ -21,6 +21,10 @@ Angshake::Application.routes.draw do
     resources :orders
   end
 
+  scope '/example_app' do
+    get '' => 'pages#example_app'
+  end
+
   resources :users do
     collection do
       post 'login'
